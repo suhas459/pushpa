@@ -10,15 +10,8 @@ protected	WebDriver driver;
 	public void logIn() {
 		 driver = new ChromeDriver();
 		WebDriverManager.chromedriver().setup();
-		driver.navigate().to("Google");
+		driver.navigate().to("https://www.google.com/");
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }
