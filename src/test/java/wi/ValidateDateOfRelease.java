@@ -12,15 +12,15 @@ public class ValidateDateOfRelease  extends base{
 	public void loginToSteps() {
 	logIn();
 	 g= new google(driver);
+	 
 	}
 	
   @Test
   public void PushpaReleaseDate() throws InterruptedException {
-	  g.enterFilmName();
+	  g.enterFilmName(driver);
 	  Thread.sleep(1500);
 	  g.ClickOnPushpa2021();
-	  
-	
-	  
+	  g.wikipedia();
+	g.date();
   }
 }
